@@ -1,0 +1,95 @@
+#body{
+    background-color: bisque;
+}
+
+#title {
+    color: black;
+    font-size: 48pt;
+    text-align: center;
+}
+
+#calculator {
+    background-color: rgb(216, 216, 216);
+    border: solid black 1pt;
+    margin: 20pt;
+    padding: 20pt;
+}
+
+#window {
+    background-color: white;
+    font-size: 24pt;
+    border: solid black 2pt;
+    padding: 10pt;
+    margin-bottom: 10pt;
+    display: flex;
+    flex-direction: column; 
+}
+.children1 {
+    justify-content: center;
+}
+
+#output {
+    background-color: chocolate;
+    border: solid black 1pt;
+    margin-bottom: 5pt;
+    display: flex;
+}
+
+#input1 {
+    background-color: cornflowerblue;
+    border: solid black 1pt;
+}
+
+#input2 {
+    background-color: rgb(148, 148, 202);
+    border: solid black 1pt;
+    margin-top: 5pt;
+}
+
+#operations {
+    background-color: white;
+    font-size: 24pt;
+    border: solid black 1pt;
+    padding: 10pt;
+
+
+}
+.children2 {
+    justify-content: center;
+    display: inline-flex;
+}
+
+#addition {
+    background-color: rgb(255, 151, 255);
+    border: solid black 1pt;
+}
+
+#subtraction {
+    background-color: darksalmon;
+    border: solid black 1pt;
+}
+
+#multiplication {
+    background-color: darkturquoise;
+    border: solid black 1pt;
+}
+
+#division {
+    background-color: deepskyblue;
+    border: solid black 1pt;
+}
+
+#clear {
+    background-color: gainsboro;
+    border: solid black 1pt;
+}
+
+#average {
+    background-color: honeydew;
+    border: solid black 1pt;
+}
+
+#submit {
+    background-color: hotpink;
+    border: solid black 1pt;
+}
