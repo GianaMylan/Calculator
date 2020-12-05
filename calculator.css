@@ -1,0 +1,72 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to right, #b2dee2, #e6e6ff);
+}
+
+#title {
+    color: black;
+    font-size: 48pt;
+    text-align: center;
+}
+
+.calculator { /* the basic layout for the calculator  */
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#calculator { /*  */
+    background-color: grey;
+    border: 1px solid black;
+    margin: 50px;
+    min-height: 50vh; /* will take up an amount of the viewing height of the window*/
+    grid-template-columns: repeat(4, 100px); /* it would repeat 4 times, at 100px each*/
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px); /* minmax = smallest at 120px, and grows as necessary, the grid repeats 5 times at 100px each */
+}
+
+.calculator > button { /* > button focuses on the buttons only for styling */
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid rgb(55, 202, 183);
+    border-radius: .25em;
+    outline: none;
+    background-color: rgb(255, 244, 228, .80); /* (#, #, #, opacity with 1.0 as 100% */
+}
+
+.calculator > button:hover { /* focusing only on the hover styling for the buttons only*/
+    background: rgb(190, 114, 209, .50);
+}
+
+.spantwo { /* makes the '=' and teh 'AC' span 2 columns */
+    grid-column: span 2 ;
+}
+
+.output { /* will affect the output section, including the previous number and the current number */
+    grid-column: 1 / -1; /* the column would go from first column to the last column */
+    background-color: rgb(63, 63, 63, .75);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 20px;
+    word-wrap: break-word; /* to wrap the numbers to another 'line' so you can still see them */
+    word-break: break-all; /* gives the ability to break all words/numbers */
+}
+
+.output .previous { /* to style the class previous within the class output */
+    color: lavender;
+    font-size: 1.5rem;
+}
+
+.output .current {
+    color: white;
+    font-size: 2.5rem;
+}
